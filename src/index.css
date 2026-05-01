@@ -1,0 +1,151 @@
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/400-italic.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+@import '@fontsource/jost/300.css';
+@import '@fontsource/jost/400.css';
+@import '@fontsource/jost/500.css';
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .noise-texture {
+    position: relative;
+  }
+  .noise-texture::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  .diagonal-stripe {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 4px,
+      rgba(255,255,255,0.06) 4px,
+      rgba(255,255,255,0.06) 8px
+    );
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(201, 146, 42, 0.15) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmerMove 2.5s ease-in-out infinite;
+  }
+
+  .gamosa-border {
+    border: 3px solid transparent;
+    background-image: repeating-linear-gradient(
+      90deg,
+      #C0281A 0px,
+      #C0281A 8px,
+      #FDF6EC 8px,
+      #FDF6EC 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #C0281A 0px,
+      #C0281A 8px,
+      #FDF6EC 8px,
+      #FDF6EC 16px
+    );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .text-shadow-gold {
+    text-shadow: 0 0 30px rgba(201, 146, 42, 0.5);
+  }
+
+  .sk-grain {
+    background-image: 
+      radial-gradient(ellipse at center, rgba(201, 146, 42, 0.03) 0%, transparent 70%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: cover, 200px 200px;
+  }
+
+  /* Indian motif repeat pattern for Shree Kunj */
+  .sk-motif-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 2 L22 10 L30 10 L24 15 L26 23 L20 18 L14 23 L16 15 L10 10 L18 10 Z' fill='%23C9922A' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 40px 40px;
+  }
+}
+
+@keyframes shimmerMove {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulseLine {
+  0%, 100% { opacity: 0.4; transform: scaleX(0.8); }
+  50% { opacity: 1; transform: scaleX(1); }
+}
+
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(201, 146, 42, 0.3), 0 0 20px rgba(201, 146, 42, 0.1); }
+  50% { box-shadow: 0 0 20px rgba(201, 146, 42, 0.6), 0 0 40px rgba(201, 146, 42, 0.3); }
+}
+
+@keyframes scrollIndicator {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(12px); opacity: 0.4; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* prefers-reduced-motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

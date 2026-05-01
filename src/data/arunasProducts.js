@@ -1,0 +1,75 @@
+// Arunas Products Data — GF&B
+// Structured for easy swap to API/WP REST endpoint later:
+// Replace export const with: export const arunasProducts = await fetch('/wp-json/wp/v2/snack_product').then(r => r.json())
+
+export const arunasProducts = [
+  // ─── 425g Pack (₹280) ───────────────────────────────────────────
+  { id: 1,  name: 'Aloo Bhujia',            category: 'Bhujia',    sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 2,  name: 'Arabpati Bhujia',        category: 'Bhujia',    sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 3,  name: 'Bengali Mixture',        category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 4,  name: 'Bhakarwadi',             category: 'Bhakarwadi',sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 5,  name: 'Bhavnagiri',             category: 'Other',     sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 6,  name: 'Bhuna Chana',            category: 'Chana',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 7,  name: 'Bikaneri Bhujia',        category: 'Bhujia',    sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 8,  name: 'Chana Dal',              category: 'Chana',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 9,  name: 'Chatpata Matar',         category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 10, name: 'Chatpata Mixture',       category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 11, name: 'Chiwda (Masala)',        category: 'Chiwda',    sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 12, name: 'Cocktail Chakna',        category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 13, name: 'Dabela Chana',           category: 'Chana',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 14, name: 'Dal Biji Mixture',       category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 15, name: 'Dhaniya Gathiya',        category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 16, name: 'Garlic Bhakarwadi',      category: 'Bhakarwadi',sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 17, name: 'Gur Para',               category: 'Sweets',    sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 18, name: 'Hing Papdi Mixture',     category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 19, name: 'Hot Spicy Mix',          category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 20, name: 'Jhal Muri',              category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '250g', price: 132 }], image: null },
+  { id: 21, name: 'Kabuli Chana',           category: 'Chana',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 22, name: 'Kerala Spicy Mix',       category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 23, name: 'Khatta Meetha',          category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 24, name: 'Khurma',                 category: 'Sweets',    sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 25, name: 'Kolkata Papdi Chanachur',category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 26, name: 'Kuch Kuch',              category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 27, name: 'Manglori Mixture',       category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 28, name: 'Marwari Bhujia',         category: 'Bhujia',    sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 29, name: 'Masala Dabela Chana',    category: 'Chana',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 30, name: 'Mini Bhakarwadi',        category: 'Bhakarwadi',sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 31, name: 'Moong',                  category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 32, name: 'Moong Dal',              category: 'Other',     sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 33, name: 'Moong Papdi Mixture',    category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 34, name: 'Nadiyadi Mixture',       category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 35, name: 'Nylon Sev',              category: 'Other',     sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 36, name: 'Onion Mathri',           category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 37, name: 'Paneer Bhujia',          category: 'Bhujia',    sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 38, name: 'Pudina Dal',             category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 39, name: 'Ribbon Chips',           category: 'Chips',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 40, name: 'Sab Kuch (Spicy Mix)',   category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 41, name: 'Shakkarpara',            category: 'Sweets',    sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 42, name: 'Spicy Peanuts',          category: 'Other',     sizes: [{ weight: '425g', price: 280 }], image: null },
+  { id: 43, name: 'Tasty Nuts',             category: 'Other',     sizes: [{ weight: '425g', price: 280 }, { weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 44, name: 'Tej Mixture',            category: 'Mixture',   sizes: [{ weight: '425g', price: 280 }], image: null },
+
+  // ─── 285g Only ───────────────────────────────────────────────────
+  { id: 45, name: 'Besan Papdi',            category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 46, name: 'Bhuna Chana (Hing Jeera)',category: 'Chana',    sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 47, name: 'Boondi (Masala)',        category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 48, name: 'Boondi (Plain)',         category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 49, name: 'Chiwda Masala',          category: 'Chiwda',    sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 50, name: 'Garlic Mixture',         category: 'Mixture',   sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 51, name: 'Gathiya',                category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 52, name: 'Masala Papdi',           category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 53, name: 'Masala Para',            category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 54, name: 'Mathri',                 category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 55, name: 'Methi Papdi',            category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 56, name: 'Mini Kachori',           category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 57, name: 'Namak Para',             category: 'Other',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 58, name: 'Soya Chips',             category: 'Chips',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+  { id: 59, name: 'Soya Stick',             category: 'Chips',     sizes: [{ weight: '285g', price: 186 }, { weight: '200g', price: 122 }], image: null },
+
+  // ─── 150g Special ─────────────────────────────────────────────
+  { id: 60, name: 'Banana Chips (Black Masala)', category: 'Chips', sizes: [{ weight: '150g', price: 169 }], image: null },
+  { id: 61, name: 'Banana Chips (Red Masala)',  category: 'Chips', sizes: [{ weight: '150g', price: 169 }], image: null },
+]
+
+export const arunasCategories = ['All', 'Bhujia', 'Mixture', 'Chana', 'Bhakarwadi', 'Chiwda', 'Sweets', 'Chips', 'Other']
+export const arunasSizes = ['All', '150g', '200g', '250g', '285g', '425g']
