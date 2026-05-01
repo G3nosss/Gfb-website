@@ -23,7 +23,7 @@ export default function App() {
                 This page doesn't exist yet.
               </p>
               <a
-                href="/"
+                href="#/"
                 className="font-dm text-gfb-gold border border-gfb-gold/40 px-6 py-2.5 
                            hover:bg-gfb-gold/10 transition-all duration-300"
               >
