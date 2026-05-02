@@ -29,7 +29,7 @@ export default function App() {
             </div>
               </Link>
             </div>
-          })
+          }
           />
       </Routes>
     </AnimatePresence>
