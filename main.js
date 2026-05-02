@@ -17,12 +17,13 @@ let phoenix, mixer;
 const loader = new THREE.GLTFLoader();
 loader.load('assets/phoenix_bird.glb', (gltf) => {
     phoenix = gltf.scene;
-    phoenix.scale.set(10, 10, 10);
-    phoenix.position.set(0, 0, -5); // Positioned behind logo
+    phoenix.scale.set(1, 1, 1);
     scene.add(phoenix);
 
     mixer = new THREE.AnimationMixer(phoenix);
+    if (gltf.animation.length >0 {
     mixer.clipAction(gltf.animations[0]).play();
+    }
 
     setupScroll();
 });
@@ -39,7 +40,9 @@ function setupScroll() {
             scrub: 1,
         }
     });
-
+(error) => {
+    console.error('An error happened while loading the model:', error);
+});
     // 1. Bird flies out from behind logo toward you
     tl.to(phoenix.position, { z: 4, y: 1, duration: 2 })
     
