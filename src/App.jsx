@@ -22,14 +22,12 @@ export default function App() {
               <p className="font-dm text-gfb-cream/60 text-lg mb-8">
                 This page doesn't exist yet.
               </p>
-              <a
-                href="/"
-                className="font-dm text-gfb-gold border border-gfb-gold/40 px-6 py-2.5 
-                           hover:bg-gfb-gold/10 transition-all duration-300"
-              >
+              <Link to="/">
+                <div className="font-dm text-gfb-gold border border-gfb-gold/40 px-6 py-2.5 
+                           hover:bg-gfb-gold/10 transition-all duration-300">
                 ← Back to GF&B Home
-              </Link>
             </div>
+              </Link>
           }
         />
       </Routes>
