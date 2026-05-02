@@ -28,7 +28,6 @@ export default function App() {
                 ← Back to GF&B Home
             </div>
               </Link>
-          }
         />
       </Routes>
     </AnimatePresence>
