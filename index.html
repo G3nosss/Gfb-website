@@ -1,31 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Heritage Snacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!-- Primary Meta -->
-    <title>GF&B — Global Food & Beverages | Assam, India</title>
-    <meta
-      name="description"
-      content="Global Food & Beverages — Born in Assam. Crafted for India. Home of Arunas (44+ snack varieties) and Shree Kunj (7 premium handcrafted creations)."
-    />
-    <meta name="keywords" content="Arunas snacks, Shree Kunj, GFB, Indian snacks, Assam food, bhujia, namkeen, premium snacks, handcrafted" />
-    <meta name="author" content="Global Food & Beverages" />
-    <meta name="theme-color" content="#C9922A" />
+    <div id="logo-overlay">
+        <img src="assets/brand-logo.png" alt="Brand Logo" id="main-logo">
+    </div>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="GF&B — Global Food & Beverages" />
-    <meta property="og:description" content="Born in Assam. Crafted for India. Two distinct snack brands — Arunas & Shree Kunj." />
-    <meta property="og:locale" content="en_IN" />
+    <div id="canvas-container"></div>
 
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+    <main class="scroll-container">
+        <section class="hero-spacer"></section>
+        
+        <section id="products" class="product-reveal">
+            <h1 class="section-title">The Royal Collection</h1>
+            <div class="product-grid">
+                <div class="card">Traditional Bhujia</div>
+                <div class="card">Saffron Delights</div>
+                <div class="card">Premium Cashews</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
