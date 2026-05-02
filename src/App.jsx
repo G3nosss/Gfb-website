@@ -1,4 +1,4 @@
-import { useLocation, Routes, Route } from 'react-router-dom'
+import { Link, useLocation, Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Home from './pages/Home'
 import Arunas from './pages/Arunas'
@@ -22,13 +22,13 @@ export default function App() {
               <p className="font-dm text-gfb-cream/60 text-lg mb-8">
                 This page doesn't exist yet.
               </p>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="font-dm text-gfb-gold border border-gfb-gold/40 px-6 py-2.5 
                            hover:bg-gfb-gold/10 transition-all duration-300"
               >
                 ← Back to GF&B Home
-              </a>
+              </Link>
             </div>
           }
         />

@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTicker from '../components/ScrollTicker'
 import GoldParticles from '../components/GoldParticles'
+import skLogo from '../assets/images/shreekunj-logo.jpeg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -632,7 +633,7 @@ export default function Home() {
                             flex items-center justify-center bg-gfb-gold/5"
               >
                 <img
-                  src="/src/assets/images/shreekunj-logo.jpeg"
+                  src={skLogo}
                   alt="Shree Kunj logo"
                   className="w-full h-full object-cover"
                 />
