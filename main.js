@@ -6,7 +6,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 // Lighting
-const ambient = new THREE.AmbientLight(0xfff5e1, 1.5);
+const ambient = new THREE.AmbientLight(0xffffff, 2);
 scene.add(ambient);
 const sun = new THREE.DirectionalLight(0xffd700, 2);
 sun.position.set(5, 10, 7);
@@ -15,9 +15,9 @@ scene.add(sun);
 // Load the Bird (Make sure phoenix_bird.glb is in your main folder)
 let phoenix, mixer;
 const loader = new THREE.GLTFLoader();
-loader.load('phoenix_bird.glb', (gltf) => {
+loader.load('assets/phoenix_bird.glb', (gltf) => {
     phoenix = gltf.scene;
-    phoenix.scale.set(0.5, 0.5, 0.5);
+    phoenix.scale.set(10, 10, 10);
     phoenix.position.set(0, 0, -5); // Positioned behind logo
     scene.add(phoenix);
 
