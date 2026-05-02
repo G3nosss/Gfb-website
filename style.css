@@ -1,0 +1,73 @@
+:root {
+    --cream: #FFFDF5;
+    --maroon: #8B0000;
+    --gold: #D4AF37;
+    --deep-green: #1B4D3E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream);
+    font-family: 'serif';
+    overflow-x: hidden;
+}
+
+/* The logo the bird starts behind */
+#logo-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+#main-logo {
+    width: 200px;
+}
+
+/* The 3D container */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Height for scrolling flight */
+.hero-spacer {
+    height: 400vh;
+}
+
+/* Product section that appears after the bird fades */
+.product-reveal {
+    position: relative;
+    z-index: 20;
+    background: white;
+    padding: 100px 5%;
+    min-height: 100vh;
+}
+
+.section-title {
+    color: var(--maroon);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    border: 1px solid var(--gold);
+    padding: 40px;
+    text-align: center;
+    background: var(--cream);
+    border-radius: 5px;
+}
